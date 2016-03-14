@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import subprocess
 
-git_version = subprocess.check_output(["git", "describe", "--tags"]).rstrip()
+git_version = subprocess.check_output(["git", "describe", "--tags"]).rstrip().decode()
 
 setup(
     name="annotate-influxdb",
