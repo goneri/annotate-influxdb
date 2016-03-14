@@ -29,7 +29,7 @@ def cli(db_host, db_port, db_name, user, password, title, tags, text):
         }]
         db.write_points(data)
     except Exception as e:
-        print e
+        print(e)
         sys.exit(-1)
 
 
